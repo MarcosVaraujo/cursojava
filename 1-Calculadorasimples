@@ -1,0 +1,51 @@
+packpage com.company;
+
+import java.sql.SQLoutput;
+import java.util.Scanner;
+public class calculador {
+
+public static void main (String [] args) {
+double n1, n2;
+int op;
+double soma, subtracao, multiplicacao, divisao;
+Scanner entrada = new Scanner(System.in);
+
+System.out.println("informe o primeiro valor:");
+n1 = entrada.nextDouble();
+System.out.println("informe o segundo valor:");
+n2 = entrada.nextDouble();
+
+System.out.println("#####SELECIONE UMA OPERAÇÃO######");
+System.out.println("[1]    -     SOMAR");
+System.out.println("[1]    -     SUBTRAIR");
+System.out.println("[1]    -     MULTIPLICAR");
+System.out.println("[4]    -     DIVIDIR");
+System.out.println(">>>>>>> DIGITE SUA OPÇÃO:  ");
+op = entrada.nextInt();
+
+switch(op)  {
+  case 1:
+      soma = n1+n2;
+      System.out.println("A soma é: "+soma);
+      break;
+      
+  case 2: 
+      subtracao = n1-n2;
+      System.out.println("A subtração é: "+subtracao);
+      break;
+      
+  case 3:
+      multiplicacao = n1*n2;
+      System.out.println("A multiplicação é: "+multiplicação);
+      break;
+      
+default:
+      System.out.println("operação invalida!!");
+      
+    }
+    
+ }
+ 
+}
+      
+
